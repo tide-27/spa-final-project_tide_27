@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    color: #1b341b;
+    background-color: #2f392f;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(183, 252, 99);
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+a{
+    padding: 10px;
+    width: 200px;
+    background-color: rgba(38, 40, 38, 0.782);
+    border: solid 1px red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    
+
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    /* border: solid 1px red; */
+}

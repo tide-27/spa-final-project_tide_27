@@ -1,0 +1,116 @@
+/* styles.css */
+
+link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; 
+}
+
+/*Grundlegende Stile für die Navigationsleiste */
+.Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #145414;
+    padding: 10px;
+    border-radius: 1rem;
+    height: 33%;
+    
+}
+
+/* Grundlegende Stile für die Navigationsleiste */
+.Navbar {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    list-style: none;
+    padding: 2rem;
+    margin: 1rem;
+    flex-direction: row;
+
+}
+
+.Navbar {
+    margin: 1rem;
+}
+
+.Navbar a {
+    color: rgb(184, 226, 16);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/* Hover-Effekt für Links */
+.Navbar a:hover {
+    background-color: #38da38;
+    border-radius: 10px;
+    color: rgb(1, 67, 158);
+    transition: 1s;
+    border: solid 1px rgb(166, 255, 0);
+
+}
+
+/* Stile für das „Hamburger“-Menü auf Mobilgeräten */
+.Navbar .menu-icon {
+    display: none;
+    color: rgb(242, 243, 244);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Stile für das Dropdown-Menü auf Mobilgeräten */
+.navbar .mobile-menu {
+    display: none;
+    background-color: #006400;
+    padding: 10px;
+}
+
+/* Stile für Dropdown-Menüelemente */
+.navbar .mobile-menu ul {
+    list-style: none;
+}
+
+.navbar .mobile-menu li {
+    margin-bottom: 10px;
+}
+
+.navbar .mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* Medienabfrage nach Reaktionsfähigkeit */
+@media (max-width: 768px) {
+
+/* Zeigt das „Hamburger“-Menü an und verbirgt das Hauptmenü */
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+/* Dropdown-Menü anzeigen, wenn Sie auf das Menü „Hamburger“ klicken */
+    .navbar .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+/* Animieren Sie das Erscheinungsbild des Dropdown-Menüs */
+    .navbar .mobile-menu.active {
+        display: block;
+    }
+}
